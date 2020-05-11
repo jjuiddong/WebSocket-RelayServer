@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="TcpClient.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\Protocol\Src\relay_ProtocolHandler.cpp">
+      <Filter>protocol_src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Protocol\Src\relay_Protocol.cpp">
+      <Filter>protocol_src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{ac0d2a41-8bf8-4858-8657-bb036984979d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol_src">
+      <UniqueIdentifier>{8db1d7c5-7dce-49ce-aa8b-e7f0628170ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Protocol\relay.prt">
+      <Filter>protocol</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\Protocol\Src\relay_ProtocolData.h">
+      <Filter>protocol_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\Src\relay_ProtocolHandler.h">
+      <Filter>protocol_src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protocol\Src\relay_Protocol.h">
+      <Filter>protocol_src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

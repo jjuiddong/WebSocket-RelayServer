@@ -1,0 +1,10 @@
+//
+// WebSocket Relay Server Protocol
+//
+
+protocol c2s 100
+{
+
+	Relay( string str );
+
+}
